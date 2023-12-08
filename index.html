@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desen. Sistemas Web</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="tituloModal">
+                    <span id="cabecalhoModal"></span>
+                </div>
+            </div>
+            <div class="modal-body" id="modalBody" style ="padding: 0" >
+
+            </div>
+            <div class="modal-footer" id="modalFooter">
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Extrato bancário</h1>
+    </header>
+
+    <section>
+        <table class="lista-extrato">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+        <div class="div-btn">
+            <a href="inserirExtrato.html"><button type="button" class="btn" onclick="cadastraExtrato()">Cadastrar</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Jorge Caetano</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            listar();
+        });
+    </script>
+</body>
+</html>

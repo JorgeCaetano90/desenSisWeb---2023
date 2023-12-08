@@ -1,0 +1,161 @@
+body{
+    background: #f1f1f1;
+    font: normal 14pt Arial;
+}
+
+header{
+    color: black;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    max-height: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.387);
+
+    #divNome, #divData, #divConta, #divValor {
+        padding-top: 10px;
+    }
+
+    #inputId, #inputNome, #inputData, #inputConta, #inputValor {
+        border-radius: 6px;
+        width: 95%;
+        height: 25px;
+        padding-left: 5px;
+    }
+
+    .label {
+        width: 3.5rem;
+        font-size: 12pt;
+        padding: 0 0 3px 3px;
+    }
+
+    .div-btn {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        padding-top: 20px;
+        
+        .btn {
+            border-radius: 6px;
+            width: 5rem;
+            height: 1.5rem;
+            cursor: pointer;
+        }
+
+        #btnEnviar:hover {
+            background-color: green;
+            color: white;
+        }
+
+        #btnLimpar:hover {
+            background-color: red;
+            color: white;
+        }
+
+        #btnVoltar:hover {
+            background-color: blue;
+            color: white;
+        }
+    }
+
+    .lista-extrato {
+        border: 1px solid;
+        overflow-y: auto;
+    }
+
+    .lista-extrato thead th{
+        text-align: left;
+        /* border: 1px solid; */
+    }
+
+    .lista-extrato tbody td {
+        border: 1px solid;
+        font-size: 12pt;
+    }
+
+    .btn {
+        border-radius: 6px;
+        width: 5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+
+    #btnUpdate:hover {
+        background-color: orange;
+        color: white;
+    }
+
+    #btnDelete:hover {
+        background-color: red;
+        color: white;
+    }
+}
+
+footer{
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 8pt;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    #divNome, #divData, #divConta, #divValor {
+        padding-top: 10px;
+    }
+
+    #inputIdUp, #inputNomeUp, #inputDataUp, #inputContaUp, #inputValorUp {
+        border-radius: 6px;
+        width: 95%;
+        height: 25px;
+        padding-left: 5px;
+    }
+}
+
+#modalBody {
+    margin-bottom: 15px;
+}
+
+#modalFooter {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn {
+    border-radius: 6px;
+    width: 5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}

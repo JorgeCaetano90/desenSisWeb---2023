@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desen. Sistemas Web</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de extrato</h1>
+    </header>
+
+    <section>
+        <form action="">
+            <div id="mainExtrato">
+                <div id="divId">
+                    <div class="label">
+                        <label for="id">ID:</label>
+                    </div>
+                    <input type="text" name="id" id="inputId" disabled="true">
+                </div>
+                <div id="divNome">
+                    <div class="label">
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <input type="text" name="nome" id="inputNome" required>
+                </div>
+                <div id="divData">
+                    <div class="label">
+                        <label for="data">Data:</label>
+                    </div>
+                    <input type="text" name="data" id="inputData" required>
+                </div>
+                <div id="divConta">
+                    <div class="label">
+                        <label for="conta">Conta:</label>
+                    </div>
+                    <input type="text" name="conta" id="inputConta" required>
+                </div>
+                <div id="divValor">
+                    <div class="label">
+                        <label for="valor">Valor:</label>
+                    </div>
+                    <input type="number" name="valor" id="inputValor" required>
+                </div>
+            </div>
+            <div class="div-btn">
+                <button type="submit" class="btn" id="btnEnviar" onclick="cadastraExtrato()">Enviar</button>
+                <a href="index.html"><button type="button" class="btn" id="btnVoltar">Voltar</button></a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Jorge Caetano</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
